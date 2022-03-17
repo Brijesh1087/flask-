@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}
+Signup
+{% endblock  %}
+{% block body %}
+
+<div class="container text-center">
+	<h3><b class="text-danger text-capitalize">{{ already }}</b></h3>
+	<div class="container-inner text-center shadow">
+		<h2 class="text-light">Signup Domain</h2>
+		<form action="/" method="post" class="mx-auto text-center p-2 ">
+			<input required maxlength="20" minlength="5" type="text" name="username" class="form-control" placeholder="Enter Username ..."><br>
+			<input required maxlength="30" minlength="10" type="text" name="email" class="form-control" placeholder="domain@example.com"><br>
+			<input required maxlength="20" minlength="6" type="password" name="password" class="form-control" placeholder="password"><br>
+			<button class="btn btn-primary my-2 ">Signup</button>
+		</form>
+		<b class="text-light ">Already have account ?<a href="/login" class="nav-link text-warning">Log in</a></b>
+	</div>
+</div>
+{% endblock %}

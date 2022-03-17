@@ -1,0 +1,14 @@
+{% extends 'base_admin.html' %}
+{% block title %}
+admin
+{% endblock %}
+{% block body %}
+<div class="contaienr-xl files">
+  <div class="container">
+    <form action="/upload_files" class="text-center my-4" method="post" enctype="multipart/form-data">
+      <input required type="file" name="file" class="form-control  file mx-auto my-2 bg-info" />
+      <input type="submit" value="Upload" class="btn btn-primary btn-lg" name="" id="">
+    </form>
+  </div>
+</div>
+{% endblock %}
